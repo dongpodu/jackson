@@ -10,7 +10,7 @@ import java.util.List;
 
 @Data
 @EqualsAndHashCode(callSuper = false)
-public class GetMemberMappingResult extends UpperResult {
+public class ListMappingModel extends UpperModel {
     @JsonProperty("Data")
     @JsonDeserialize(as= ArrayList.class, contentAs= Model.class)
     private List<Model> items;

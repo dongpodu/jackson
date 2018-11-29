@@ -7,7 +7,7 @@ import lombok.Data;
  * json字段首字母是大写的
  */
 @Data
-public class UpperResult {
+public class UpperModel {
 
     @JsonProperty("Code")
     private String code;
