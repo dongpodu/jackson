@@ -17,20 +17,7 @@ public class ListMappingModel extends UpperModel {
 
     @Data
     public static class Model{
-        @JsonProperty("OpenId")
         private String openId;
-        @JsonProperty("UnionId")
-        private String unionId;
-        @JsonProperty("ClientSn")
-        private Integer clientSn;
-        @JsonProperty("LeadSn")
-        private Integer leadSn;
-        @JsonProperty("ClientName")
-        private String clientName;
-        @JsonProperty("BrandId")
-        private Integer brandId;
-        @JsonProperty("VipJr")
-        private Integer vipJr;
     }
 
 }
