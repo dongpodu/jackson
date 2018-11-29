@@ -1,16 +1,15 @@
 package me.will.jackson.model;
 
-import lombok.Data;
+import me.will.jackson.JsonUtils;
 
 import java.io.Serializable;
 
 /**
  * Created by will
  */
-@Data
 public class WxUserInfoDto implements Serializable{
     private String openId;
-    private String nickName;
+    private String NickName;
     private String gender;
     private String language;
     private String city;
@@ -18,4 +17,10 @@ public class WxUserInfoDto implements Serializable{
     private String country;
     private String avatarUrl;
     private String unionId;
+
+    public static void main(String[] args) {
+        WxUserInfoDto userInfoDto = new WxUserInfoDto();
+        String json = JsonUtils.serialize(userInfoDto);
+        System.out.println(json);
+    }
 }
